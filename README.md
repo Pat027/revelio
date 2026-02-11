@@ -2,8 +2,6 @@
 
 LLM Red Teaming & Safety Testing Framework. Systematically discover vulnerabilities in large language models through adversarial attacks and automated evaluation.
 
-> Fork of [Revelio](https://github.com/Pat027/revelio) (Apache-2.0). Original work by Confident AI.
-
 ## Install
 
 ```bash

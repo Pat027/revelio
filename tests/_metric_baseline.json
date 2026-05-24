@@ -1,0 +1,629 @@
+{
+  "AgentIdentityAbuse": {
+    "allowed": [
+      "agent_impersonation",
+      "cross_agent_trust_abuse",
+      "identity_inheritance"
+    ],
+    "class_name": "AgentIdentityAbuse",
+    "metric_category_attrs": {
+      "abuse_type": "agent_impersonation"
+    },
+    "metric_class": "AgentIdentityAbuseMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Agent Identity Abuse (Red Teaming)",
+    "types": [
+      "agent_impersonation",
+      "cross_agent_trust_abuse",
+      "identity_inheritance"
+    ],
+    "vuln_name": "Agent Identity & Trust Abuse"
+  },
+  "AutonomousAgentDrift": {
+    "allowed": [
+      "agent_collusion",
+      "goal_drift",
+      "reward_hacking",
+      "runaway_autonomy"
+    ],
+    "class_name": "AutonomousAgentDrift",
+    "metric_category_attrs": {
+      "drift_type": "goal_drift"
+    },
+    "metric_class": "AutonomousAgentDriftMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Autonomous Agent Drift (Red Teaming)",
+    "types": [
+      "agent_collusion",
+      "goal_drift",
+      "reward_hacking",
+      "runaway_autonomy"
+    ],
+    "vuln_name": "Autonomous Agent Drift"
+  },
+  "BFLA": {
+    "allowed": [
+      "authorization_bypass",
+      "function_bypass",
+      "privilege_escalation"
+    ],
+    "class_name": "BFLA",
+    "metric_category_attrs": {},
+    "metric_class": "BFLAMetric",
+    "metric_has_purpose": true,
+    "metric_name": "BFLA (Red Teaming)",
+    "types": [
+      "authorization_bypass",
+      "function_bypass",
+      "privilege_escalation"
+    ],
+    "vuln_name": "BFLA"
+  },
+  "BOLA": {
+    "allowed": [
+      "cross_customer_access",
+      "object_access_bypass",
+      "unauthorized_object_manipulation"
+    ],
+    "class_name": "BOLA",
+    "metric_category_attrs": {},
+    "metric_class": "BOLAMetric",
+    "metric_has_purpose": false,
+    "metric_name": "BOLA (Red Teaming)",
+    "types": [
+      "cross_customer_access",
+      "object_access_bypass",
+      "unauthorized_object_manipulation"
+    ],
+    "vuln_name": "BOLA"
+  },
+  "Bias": {
+    "allowed": [
+      "gender",
+      "politics",
+      "race",
+      "religion"
+    ],
+    "class_name": "Bias",
+    "metric_category_attrs": {},
+    "metric_class": "BiasMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Bias (Red Teaming)",
+    "types": [
+      "gender",
+      "politics",
+      "race",
+      "religion"
+    ],
+    "vuln_name": "Bias"
+  },
+  "ChildProtection": {
+    "allowed": [
+      "age_verification",
+      "data_privacy",
+      "exposure_interaction"
+    ],
+    "class_name": "ChildProtection",
+    "metric_category_attrs": {},
+    "metric_class": "ChildProtectionMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Child Protection (Red Teaming)",
+    "types": [
+      "age_verification",
+      "data_privacy",
+      "exposure_interaction"
+    ],
+    "vuln_name": "Child Protection"
+  },
+  "Competition": {
+    "allowed": [
+      "competitor_mention",
+      "confidential_strategies",
+      "discreditation",
+      "market_manipulation"
+    ],
+    "class_name": "Competition",
+    "metric_category_attrs": {},
+    "metric_class": "CompetitorsMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Competitors (Red Teaming)",
+    "types": [
+      "competitor_mention",
+      "confidential_strategies",
+      "discreditation",
+      "market_manipulation"
+    ],
+    "vuln_name": "Competition"
+  },
+  "CustomVulnerability": {
+    "allowed": [],
+    "class_name": "CustomVulnerability",
+    "metric_category_attrs": {
+      "harm_category": "some criteria"
+    },
+    "metric_class": "HarmMetric",
+    "metric_has_purpose": false,
+    "metric_name": "Harm (Red Teaming)",
+    "types": [
+      "t1",
+      "t2"
+    ],
+    "vuln_name": "MyVuln"
+  },
+  "DebugAccess": {
+    "allowed": [
+      "administrative_interface_exposure",
+      "debug_mode_bypass",
+      "development_endpoint_access"
+    ],
+    "class_name": "DebugAccess",
+    "metric_category_attrs": {},
+    "metric_class": "DebugAccessMetric",
+    "metric_has_purpose": false,
+    "metric_name": "Debug Access (Red Teaming)",
+    "types": [
+      "administrative_interface_exposure",
+      "debug_mode_bypass",
+      "development_endpoint_access"
+    ],
+    "vuln_name": "Debug Access"
+  },
+  "Ethics": {
+    "allowed": [
+      "harm_prevention",
+      "moral_integrity",
+      "responsible_transparency"
+    ],
+    "class_name": "Ethics",
+    "metric_category_attrs": {},
+    "metric_class": "EthicsMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Ethics (Red Teaming)",
+    "types": [
+      "harm_prevention",
+      "moral_integrity",
+      "responsible_transparency"
+    ],
+    "vuln_name": "Ethics"
+  },
+  "ExcessiveAgency": {
+    "allowed": [
+      "autonomy",
+      "functionality",
+      "permissions"
+    ],
+    "class_name": "ExcessiveAgency",
+    "metric_category_attrs": {},
+    "metric_class": "ExcessiveAgencyMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Excessive Agency (Red Teaming)",
+    "types": [
+      "autonomy",
+      "functionality",
+      "permissions"
+    ],
+    "vuln_name": "Excessive Agency"
+  },
+  "Fairness": {
+    "allowed": [
+      "equality_consistency",
+      "procedural_opportunity",
+      "temporal_outcome"
+    ],
+    "class_name": "Fairness",
+    "metric_category_attrs": {},
+    "metric_class": "FairnessMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Fairness (Red Teaming)",
+    "types": [
+      "equality_consistency",
+      "procedural_opportunity",
+      "temporal_outcome"
+    ],
+    "vuln_name": "Fairness"
+  },
+  "GoalTheft": {
+    "allowed": [
+      "cooperative_dialogue",
+      "escalating_probing",
+      "social_engineering"
+    ],
+    "class_name": "GoalTheft",
+    "metric_category_attrs": {},
+    "metric_class": "ExtractionSuccessMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Extraction Success (Red Teaming)",
+    "types": [
+      "cooperative_dialogue",
+      "escalating_probing",
+      "social_engineering"
+    ],
+    "vuln_name": "Goal Theft"
+  },
+  "GraphicContent": {
+    "allowed": [
+      "graphic_content",
+      "pornographic_content",
+      "sexual_content"
+    ],
+    "class_name": "GraphicContent",
+    "metric_category_attrs": {
+      "graphic_category": "sexual_content"
+    },
+    "metric_class": "GraphicMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Graphic Content (Red Teaming)",
+    "types": [
+      "graphic_content",
+      "pornographic_content",
+      "sexual_content"
+    ],
+    "vuln_name": "Graphic Content"
+  },
+  "IllegalActivity": {
+    "allowed": [
+      "child_exploitation",
+      "cybercrime",
+      "illegal_drugs",
+      "non_violent_crimes",
+      "sex_crimes",
+      "violent_crimes",
+      "weapons"
+    ],
+    "class_name": "IllegalActivity",
+    "metric_category_attrs": {
+      "illegal_category": "weapons"
+    },
+    "metric_class": "IllegalMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Illegal Activity (Red Teaming)",
+    "types": [
+      "child_exploitation",
+      "cybercrime",
+      "illegal_drugs",
+      "non_violent_crimes",
+      "sex_crimes",
+      "violent_crimes",
+      "weapons"
+    ],
+    "vuln_name": "Illegal Activity"
+  },
+  "IndirectInstruction": {
+    "allowed": [
+      "cross_context_injection",
+      "document_embedded_instructions",
+      "rag_injection",
+      "tool_output_injection"
+    ],
+    "class_name": "IndirectInstruction",
+    "metric_category_attrs": {
+      "instruction_type": "rag_injection"
+    },
+    "metric_class": "IndirectInstructionMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Indirect Instruction (Red Teaming)",
+    "types": [
+      "cross_context_injection",
+      "document_embedded_instructions",
+      "rag_injection",
+      "tool_output_injection"
+    ],
+    "vuln_name": "Indirect Instruction"
+  },
+  "InsecureInterAgentCommunication": {
+    "allowed": [
+      "agent_in_the_middle",
+      "message_injection",
+      "message_spoofing"
+    ],
+    "class_name": "InsecureInterAgentCommunication",
+    "metric_category_attrs": {
+      "communication_type": "message_spoofing"
+    },
+    "metric_class": "InsecureInterAgentCommunicationMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Insecure Inter-Agent Communication (Red Teaming)",
+    "types": [
+      "agent_in_the_middle",
+      "message_injection",
+      "message_spoofing"
+    ],
+    "vuln_name": "Inter-Agent Communication Compromise"
+  },
+  "IntellectualProperty": {
+    "allowed": [
+      "copyright_violations",
+      "imitation",
+      "patent_disclosure",
+      "trademark_infringement"
+    ],
+    "class_name": "IntellectualProperty",
+    "metric_category_attrs": {},
+    "metric_class": "IntellectualPropertyMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Intellectual Property (Red Teaming)",
+    "types": [
+      "copyright_violations",
+      "imitation",
+      "patent_disclosure",
+      "trademark_infringement"
+    ],
+    "vuln_name": "Intellectual Property"
+  },
+  "Misinformation": {
+    "allowed": [
+      "expertize_misrepresentation",
+      "factual_errors",
+      "unsupported_claims"
+    ],
+    "class_name": "Misinformation",
+    "metric_category_attrs": {
+      "misinformation_category": "factual_errors"
+    },
+    "metric_class": "MisinformationMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Misinformation (Red Teaming)",
+    "types": [
+      "expertize_misrepresentation",
+      "factual_errors",
+      "unsupported_claims"
+    ],
+    "vuln_name": "Misinformation"
+  },
+  "PIILeakage": {
+    "allowed": [
+      "api_and_database_access",
+      "direct_disclosure",
+      "session_leak",
+      "social_manipulation"
+    ],
+    "class_name": "PIILeakage",
+    "metric_category_attrs": {},
+    "metric_class": "PIIMetric",
+    "metric_has_purpose": true,
+    "metric_name": "PII (Red Teaming)",
+    "types": [
+      "api_and_database_access",
+      "direct_disclosure",
+      "session_leak",
+      "social_manipulation"
+    ],
+    "vuln_name": "PII Leakage"
+  },
+  "PersonalSafety": {
+    "allowed": [
+      "bullying",
+      "dangerous_challenges",
+      "self_harm",
+      "stalking",
+      "unsafe_practices"
+    ],
+    "class_name": "PersonalSafety",
+    "metric_category_attrs": {
+      "safety_category": "bullying"
+    },
+    "metric_class": "SafetyMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Personal Safety (Red Teaming)",
+    "types": [
+      "bullying",
+      "dangerous_challenges",
+      "self_harm",
+      "stalking",
+      "unsafe_practices"
+    ],
+    "vuln_name": "Personal Safety"
+  },
+  "PromptLeakage": {
+    "allowed": [
+      "guard_exposure",
+      "instructions",
+      "permissions_and_roles",
+      "secrets_and_credentials"
+    ],
+    "class_name": "PromptLeakage",
+    "metric_category_attrs": {},
+    "metric_class": "PromptExtractionMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Prompt Extraction (Red Teaming)",
+    "types": [
+      "guard_exposure",
+      "instructions",
+      "permissions_and_roles",
+      "secrets_and_credentials"
+    ],
+    "vuln_name": "Prompt Leakage"
+  },
+  "RBAC": {
+    "allowed": [
+      "privilege_escalation",
+      "role_bypass",
+      "unauthorized_role_assumption"
+    ],
+    "class_name": "RBAC",
+    "metric_category_attrs": {},
+    "metric_class": "RBACMetric",
+    "metric_has_purpose": true,
+    "metric_name": "RBAC (Red Teaming)",
+    "types": [
+      "privilege_escalation",
+      "role_bypass",
+      "unauthorized_role_assumption"
+    ],
+    "vuln_name": "RBAC"
+  },
+  "RecursiveHijacking": {
+    "allowed": [
+      "goal_propagation_attacks",
+      "recursive_objective_chaining",
+      "self_modifying_goals"
+    ],
+    "class_name": "RecursiveHijacking",
+    "metric_category_attrs": {},
+    "metric_class": "SubversionSuccessMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Subversion Success (Red Teaming)",
+    "types": [
+      "goal_propagation_attacks",
+      "recursive_objective_chaining",
+      "self_modifying_goals"
+    ],
+    "vuln_name": "Recursive Hijacking"
+  },
+  "Robustness": {
+    "allowed": [
+      "hijacking",
+      "input_overreliance"
+    ],
+    "class_name": "Robustness",
+    "metric_category_attrs": {},
+    "metric_class": "OverrelianceMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Overreliance (Red Teaming)",
+    "types": [
+      "hijacking",
+      "input_overreliance"
+    ],
+    "vuln_name": "Robustness"
+  },
+  "SQLInjection": {
+    "allowed": [
+      "blind_sql_injection",
+      "error_based_injection",
+      "union_based_injection"
+    ],
+    "class_name": "SQLInjection",
+    "metric_category_attrs": {},
+    "metric_class": "SQLInjectionMetric",
+    "metric_has_purpose": false,
+    "metric_name": "SQL Injection (Red Teaming)",
+    "types": [
+      "blind_sql_injection",
+      "error_based_injection",
+      "union_based_injection"
+    ],
+    "vuln_name": "SQL Injection"
+  },
+  "SSRF": {
+    "allowed": [
+      "cloud_metadata_access",
+      "internal_service_access",
+      "port_scanning"
+    ],
+    "class_name": "SSRF",
+    "metric_category_attrs": {},
+    "metric_class": "SSRFMetric",
+    "metric_has_purpose": true,
+    "metric_name": "SSRF (Red Teaming)",
+    "types": [
+      "cloud_metadata_access",
+      "internal_service_access",
+      "port_scanning"
+    ],
+    "vuln_name": "SSRF"
+  },
+  "ShellInjection": {
+    "allowed": [
+      "command_injection",
+      "shell_escape_sequences",
+      "system_command_execution"
+    ],
+    "class_name": "ShellInjection",
+    "metric_category_attrs": {},
+    "metric_class": "ShellInjectionMetric",
+    "metric_has_purpose": false,
+    "metric_name": "Shell Injection (Red Teaming)",
+    "types": [
+      "command_injection",
+      "shell_escape_sequences",
+      "system_command_execution"
+    ],
+    "vuln_name": "Shell Injection"
+  },
+  "ToolMetadataPoisoning": {
+    "allowed": [
+      "description_deception",
+      "permission_misrepresentation",
+      "registry_poisoning",
+      "schema_manipulation"
+    ],
+    "class_name": "ToolMetadataPoisoning",
+    "metric_category_attrs": {
+      "poisoning_type": "schema_manipulation"
+    },
+    "metric_class": "ToolMetadataPoisoningMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Tool Metadata Poisoning (Red Teaming)",
+    "types": [
+      "description_deception",
+      "permission_misrepresentation",
+      "registry_poisoning",
+      "schema_manipulation"
+    ],
+    "vuln_name": "Tool Metadata Poisoning"
+  },
+  "ToolOrchestrationAbuse": {
+    "allowed": [
+      "cross_tool_state_leakage",
+      "recursive_tool_calls",
+      "tool_budget_exhaustion",
+      "unsafe_tool_composition"
+    ],
+    "class_name": "ToolOrchestrationAbuse",
+    "metric_category_attrs": {
+      "orchestration_type": "recursive_tool_calls"
+    },
+    "metric_class": "ToolOrchestrationMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Tool Orchestration (Red Teaming)",
+    "types": [
+      "cross_tool_state_leakage",
+      "recursive_tool_calls",
+      "tool_budget_exhaustion",
+      "unsafe_tool_composition"
+    ],
+    "vuln_name": "Tool Orchestration Abuse"
+  },
+  "Toxicity": {
+    "allowed": [
+      "insults",
+      "mockery",
+      "profanity",
+      "threats"
+    ],
+    "class_name": "Toxicity",
+    "metric_category_attrs": {
+      "toxicity_category": "profanity"
+    },
+    "metric_class": "ToxicityMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Toxicity (Red Teaming)",
+    "types": [
+      "insults",
+      "mockery",
+      "profanity",
+      "threats"
+    ],
+    "vuln_name": "Toxicity"
+  },
+  "UnexpectedCodeExecution": {
+    "allowed": [
+      "eval_usage",
+      "shell_command_execution",
+      "unauthorized_code_execution"
+    ],
+    "class_name": "UnexpectedCodeExecution",
+    "metric_category_attrs": {
+      "execution_type": "unauthorized_code_execution"
+    },
+    "metric_class": "UnexpectedCodeExecutionMetric",
+    "metric_has_purpose": true,
+    "metric_name": "Unexpected Code Execution (Red Teaming)",
+    "types": [
+      "eval_usage",
+      "shell_command_execution",
+      "unauthorized_code_execution"
+    ],
+    "vuln_name": "Unexpected Code Execution"
+  }
+}

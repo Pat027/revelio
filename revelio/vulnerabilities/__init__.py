@@ -40,7 +40,6 @@ from .recursive_hijacking.recursive_hijacking import RecursiveHijacking
 from .robustness.robustness import Robustness
 from .excessive_agency.excessive_agency import ExcessiveAgency
 
-
 __all__ = [
     "BaseVulnerability",
     "Bias",
